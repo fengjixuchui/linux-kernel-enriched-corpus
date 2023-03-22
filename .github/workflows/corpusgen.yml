@@ -1,4 +1,4 @@
-name: Fetch Repros
+name: Corpus Generation
 
 on:
   push:
