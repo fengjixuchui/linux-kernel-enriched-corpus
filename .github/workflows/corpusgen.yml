@@ -1,0 +1,38 @@
+name: Fetch Repros
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - files/*
+      - .github/corpusgen.yml
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - files/*
+      - .github/corpusgen.yml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Go environment
+      uses: actions/setup-go@v4.0.0
+    - name: Clone syzkaller
+      run: |
+        cd ..
+        git clone https://github.com/google/syzkaller
+        cd syzkaller/tools/syz-db
+        go run syz-db.go pack ../../../linux-kernel-regression-corpus/files corpus.db
+        cp -v corpus.db ../../../linux-kernel-regression-corpus
+        cd ../../../
+        rm -vr syzkaller
+        cd linux-kernel-regression-corpus
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
