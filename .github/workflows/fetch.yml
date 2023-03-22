@@ -5,10 +5,12 @@ on:
     branches: [ "main" ]
     paths:
       - collect.py
+      - .github/**
   pull_request:
     branches: [ "main" ]
     paths:
       - collect.py
+      - .github/**
 
 jobs:
   build:
