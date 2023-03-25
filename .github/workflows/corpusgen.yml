@@ -6,12 +6,12 @@ on:
     branches: [ "main" ]
     paths:
       - files/*
-      - .github/corpusgen.yml
+      - .github/workflows/corpusgen.yml
   pull_request:
     branches: [ "main" ]
     paths:
       - files/*
-      - .github/corpusgen.yml
+      - .github/workflows/corpusgen.yml
 
 jobs:
   build:
