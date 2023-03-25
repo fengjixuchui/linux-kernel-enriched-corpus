@@ -6,12 +6,12 @@ on:
     branches: [ "main" ]
     paths:
       - collect.py
-      - .github/fetch.yml
+      - .github/workflows/fetch.yml
   pull_request:
     branches: [ "main" ]
     paths:
       - collect.py
-      - .github/fetch.yml
+      - .github/workflows/fetch.yml
   schedule:
     - cron: '0 0 * * *'
 
