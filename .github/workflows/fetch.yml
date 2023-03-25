@@ -12,6 +12,8 @@ on:
     paths:
       - collect.py
       - .github/fetch.yml
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
