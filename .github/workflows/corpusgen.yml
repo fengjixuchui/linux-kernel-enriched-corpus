@@ -7,11 +7,8 @@ on:
     paths:
       - files/*
       - .github/workflows/corpusgen.yml
-  pull_request:
-    branches: [ "main" ]
-    paths:
-      - files/*
-      - .github/workflows/corpusgen.yml
+  schedule:
+    - cron: '1 1 * * *'
 
 jobs:
   build:
