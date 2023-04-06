@@ -57,7 +57,7 @@ CVEs:
 * [CVE-2023-26606](https://www.cve.org/CVERecord?id=CVE-2023-26606)
 * [CVE-2023-26607](https://www.cve.org/CVERecord?id=CVE-2023-26607)
 
-Bugs:
+New Bugs Reported:
 * https://lkml.org/lkml/2023/2/20/128
 * https://lkml.org/lkml/2023/2/20/773
 * https://lkml.org/lkml/2023/2/20/785
@@ -65,3 +65,148 @@ Bugs:
 * https://lkml.org/lkml/2023/2/21/1353
 * https://lkml.org/lkml/2023/2/22/3 
 [and many more](https://twitter.com/oswalpalash/status/1627776397828853760)
+
+Exhaustive List of Bugs Discovered with Regression Corpus:
+* WARNING in udf_free_inode
+* WARNING in tcp_enter_loss
+* WARNING in shark_write_val/usb_submit_urb
+* WARNING in send_packet/usb_submit_urb
+* WARNING in notify_change
+* WARNING in nilfs_sufile_set_segment_usage
+* WARNING in nilfs_dat_prepare_end
+* WARNING in nilfs_dat_commit_end
+* WARNING in iomap_iter
+* WARNING in inc_nlink
+* WARNING in hif_usb_send/usb_submit_urb
+* WARNING in ext4_xattr_block_set
+* WARNING in bpf_check
+* WARNING in ar5523_cmd/usb_submit_urb
+* WARNING in __dev_queue_xmit
+* WARNING in __brelse
+* UBSAN: shift-out-of-bounds in snto32
+* UBSAN: shift-out-of-bounds in ntfs_fill_super
+* UBSAN: shift-out-of-bounds in nilfs_load_super_block
+* UBSAN: shift-out-of-bounds in init_sb
+* UBSAN: shift-out-of-bounds in dbAllocAG
+* SYZFATAL: executor NUM failed NUM times: executor NUM: failed to write control pipe: write |NUM: broken pipe
+* SYZFATAL: executor NUM failed NUM times: executor NUM: exit status NUM
+* suppressed report
+* possible deadlock in virtual_nci_close
+* possible deadlock in rfcomm_sk_state_change
+* possible deadlock in nilfs_count_free_blocks
+* possible deadlock in nci_start_poll
+* possible deadlock in btrfs_dirty_inode
+* kernel BUG in gfs2_fill_super
+* KASAN: use-after-free Read in si470x_int_in_callback
+* KASAN: use-after-free Read in run_unpack
+* KASAN: use-after-free Read in ntfs_trim_fs
+* KASAN: use-after-free Read in ntfs_attr_find
+* KASAN: use-after-free Read in hdr_find_e
+* KASAN: use-after-free Read in drm_gem_object_release_handle
+* KASAN: use-after-free Read in ar5523_cmd_tx_cb
+* KASAN: slab-out-of-bounds Write in udf_find_entry
+* KASAN: slab-out-of-bounds Read in run_unpack
+* KASAN: slab-out-of-bounds Read in ntfs_trim_fs
+* KASAN: slab-out-of-bounds Read in hdr_find_e
+* KASAN: out-of-bounds Read in leaf_paste_entries
+* KASAN: null-ptr-deref Write in f2fs_stop_discard_thread
+* INFO: task hung in nfnetlink_rcv_msg
+* INFO: task hung in ip_set_net_exit
+* INFO: task hung in blkdev_put
+* INFO: rcu detected stall in corrupted
+* general protection fault in nilfs_segctor_do_construct
+* general protection fault in ni_write_inode
+* general protection fault in end_page_writeback
+* general protection fault in dbgfs_rm_context_write
+* general protection fault in can_rcv_filter
+* general protection fault in __queue_work
+* BUG: unable to handle kernel paging request in mi_enum_attr
+* BUG: sleeping function called from invalid context in kernfs_walk_and_get_ns
+* BUG: Bad page state
+* WARNING: ODEBUG bug in virtual_ncidev_close
+* WARNING in nf_tables_exit_net
+* WARNING in btrfs_commit_transaction
+* WARNING in btf_type_id_size
+* WARNING in __skb_flow_dissect
+* possible deadlock in input_event
+* possible deadlock in btrfs_commit_transaction
+* possible deadlock in __nilfs_error
+* kernel BUG in ext4_write_inline_data
+* general protection fault in skb_release_data
+* general protection fault in em_u32_match
+* general protection fault in em_cmp_match
+* general protection fault in d_flags_for_inode
+* BUG: unable to handle kernel paging request in ntfs_attr_find
+* BUG: unable to handle kernel paging request in hdr_find_e
+* BUG: stack guard page was hit in inet6_release
+* WARNING in nci_unregister_device
+* kernel BUG in pfkey_send_acquire
+* KASAN: use-after-free Read in move_expired_inodes
+* KASAN: slab-out-of-bounds Read in ntfs_attr_find
+* general protection fault in nilfs_palloc_commit_free_entry
+* SYZFATAL: executor NUM failed NUM times: executor NUM: EOF
+* KASAN: use-after-free Read in __mark_inode_dirty
+* WARNING in __perf_event_overflow
+* KASAN: use-after-free Read in mi_enum_attr
+* KASAN: use-after-free Read in em28xx_init_extension
+* KASAN: use-after-free Read in do_garbage_collect
+* KASAN: slab-out-of-bounds Read in do_garbage_collect
+* INFO: rcu detected stall in do_idle
+* WARNING in j1939_session_deactivate
+* WARNING in hugetlb_wp
+* KASAN: use-after-free Read in cfusbl_device_notify
+* INFO: rcu detected stall in tc_modify_qdisc
+* possible deadlock in sco_connect_cfm
+* KASAN: use-after-free Read in notifier_call_chain
+* INFO: task hung in p9_fd_close
+* WARNING in rose_device_event
+* WARNING in input_unregister_device
+* WARNING in __udf_add_aext
+* possible deadlock in p9_req_put
+* possible deadlock in __btrfs_tree_lock
+* KASAN: use-after-free Write in nr_release
+* INFO: rcu detected stall in newlstat
+* INFO: rcu detected stall in net_tx_action
+* WARNING in schedule_bh
+* unregister_netdevice: waiting for DEV to become free
+* possible deadlock in sco_conn_del
+* possible deadlock in jbd2_journal_lock_updates
+* possible deadlock in ext4_bmap
+* KASAN: use-after-free Read in task_work_run
+* KASAN: use-after-free Read in inode_cgwb_move_to_attached
+* KASAN: use-after-free Read in __fib6_clean_all
+* INFO: task hung in nfc_rfkill_set_block
+* INFO: rcu detected stall in syscall_exit_to_user_mode
+* INFO: rcu detected stall in clone
+* UBSAN: shift-out-of-bounds in extAlloc
+* SYZFATAL: executor NUM failed NUM times: executor NUM: not serving
+* possible deadlock in btrfs_search_slot
+* possible deadlock in __jbd2_log_wait_for_space
+* KFENCE: use-after-free in drm_gem_object_release_handle
+* kernel BUG in fou_build_udp
+* kernel BUG in do_journal_end
+* KASAN: use-after-free Read in tcp_retransmit_timer
+* KASAN: use-after-free Read in nilfs_segctor_sync
+* KASAN: use-after-free Read in nexthop_flush_dev
+* KASAN: use-after-free Read in lock_sock_nested
+* KASAN: slab-out-of-bounds Read in mi_enum_attr
+* INFO: task hung in usbdev_release
+* INFO: task hung in ip_set_nfnl_get_byindex
+* INFO: task hung in blkdev_fallocate
+* INFO: rcu detected stall in sys_symlink
+* INFO: rcu detected stall in sys_rename
+* INFO: rcu detected stall in smp_call_function
+* INFO: rcu detected stall in pcpu_balance_workfn
+* INFO: rcu detected stall in newfstat
+* INFO: rcu detected stall in ip_rcv
+* INFO: rcu detected stall in ext4_file_write_iter
+* INFO: rcu detected stall in do_sys_open
+* INFO: rcu detected stall in cleanup_net
+* INFO: rcu detected stall in addrconf_dad_work
+* INFO: rcu detected stall in __netif_receive_skb_core
+* INFO: rcu detected stall in __fput
+* general protection fault in skb_unlink
+* general protection fault in requeue_rx_msgs
+* general protection fault in prepare_to_wait
+* general protection fault in locked_inode_to_wb_and_lock_list
+* BUG: soft lockup in smp_call_function
