@@ -38,6 +38,10 @@ An implementation of this is available in the GitHub actions workflow [here](./.
 
 ## Results
 
+Experiments performed by fuzzing 1 instance using 2VCPUs and 4GB RAM for 24 hours.
+System Used : [ThinkMate](https://www.thinkmate.com/system/rax-xf2-11s1-sh), Intel® Xeon® Gold 6226R.
+Kernel Versions Tested:  Linux v6.0.8 and v6.1.20
+
 Coverage over time 
 ![image](https://user-images.githubusercontent.com/6431196/230491976-e58db401-d572-4c58-ab18-59cbcf4031ec.png)
 
