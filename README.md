@@ -33,3 +33,27 @@ An implementation of this is available in the GitHub actions workflow [here](./.
 
 
 ## Results
+
+Coverage over time 
+![image](https://user-images.githubusercontent.com/6431196/230491976-e58db401-d572-4c58-ab18-59cbcf4031ec.png)
+
+Unique Crashes over time
+![image](https://user-images.githubusercontent.com/6431196/230492537-d1d859a3-6b4a-432e-a290-44fcc5913cd1.png)
+
+Total Crashes over time
+![image](https://user-images.githubusercontent.com/6431196/230493115-42fe4205-06b3-471a-b228-426003d1e3b7.png)
+
+CVEs:
+* [CVE-2023-26544](https://www.cve.org/CVERecord?id=CVE-2023-26544)
+* [CVE-2023-26605](https://www.cve.org/CVERecord?id=CVE-2023-26605)
+* [CVE-2023-26606](https://www.cve.org/CVERecord?id=CVE-2023-26606)
+* [CVE-2023-26607](https://www.cve.org/CVERecord?id=CVE-2023-26607)
+
+Bugs:
+* https://lkml.org/lkml/2023/2/20/128
+* https://lkml.org/lkml/2023/2/20/773
+* https://lkml.org/lkml/2023/2/20/785
+* https://lkml.org/lkml/2023/2/20/860
+* https://lkml.org/lkml/2023/2/21/1353
+* https://lkml.org/lkml/2023/2/22/3 
+[and many more](https://twitter.com/oswalpalash/status/1627776397828853760)
