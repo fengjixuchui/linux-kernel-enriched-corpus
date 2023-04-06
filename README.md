@@ -6,33 +6,35 @@ For more questions, feel free to email [Palash Oswal](https://oswalpalash.com) o
 
 ## Using corpus with Syzkaller
 
-The latest copy of the Corpus file [corpus.db](./corpus.db) is available in this repository. The file is updated daily. 
+The latest copy of the Corpus file [corpus.db](./corpus.db) is available in this repository. The file is updated daily.
+
 Download it to [syzkaller](https://github.com/google/syzkaller) workdir and start syzkaller.
 ```
 mkdir workdir
 cd workdir
 wget https://github.com/cmu-pasta/linux-kernel-regression-corpus/raw/main/corpus.db
 ```
-Start Fuzzer
 
 ## Using corpus with HEALER
 
 The corpus programs are stored in `files` directory and can directly be imported to [HEALER](https://github.com/SunHao-0/healer).
+
 Clone the repository and copy over `files/*` to `output/corpus/` directory in HEALER. From within HEALER working directory, run the following commands.
 ```
 mkdir -p output/corpus
 cp -vr <path/to/files/> output/corpus/
 ```
-Start Fuzzer
 
 ### Fetching Corpus Manually
 
 [collect.py](./collect.py) : currently fetches `syz` reproducers from all fixed Linux Kernel upstream crashes in [syzbot](syzkaller.appspot.com/upstream/fixed).
+
 This script can be modified to fetch corpus programs from other kernel versions and to fetch "C" Programs instead of `syz` reproducers.
 
 ### Generating corpus.db File
 
 If you have a collection of `syz` programs that need to be converted to a syzkaller comptaible `corpus.db` file, you can use `syz-db.go pack` from syzkaller.
+
 An implementation of this is available in the GitHub actions workflow [here](./.github/workflows/corpusgen.yml).
 
 
@@ -206,3 +208,33 @@ Exhaustive List of Bugs Discovered with Syzkaller using Regression Corpus:
 * general protection fault in prepare_to_wait
 * general protection fault in locked_inode_to_wb_and_lock_list
 * BUG: soft lockup in smp_call_function
+
+Exhaustive List of Bugs Discovered with HEALER using Regression Corpus:
+* BUG: corrupted list in em28xx_init_extension
+* BUG: unable to handle kernel paging request in eventfd_ctx_put
+* general protection fault in prepare_to_wait
+* KASAN: slab-out-of-bounds Read in ntfs_attr_find
+* KASAN: slab-out-of-bounds Read in print_report
+* KASAN: use-after-free Read in ar5523_cmd_tx_cb
+* KASAN: use-after-free Read in cfusbl_device_notify
+* KASAN: use-after-free Read in drm_gem_object_release_handle
+* KASAN: use-after-free Read in __fib6_clean_all
+* KASAN: use-after-free Read in notifier_call_chain
+* KASAN: use-after-free Read in ntfs_attr_find
+* KASAN: use-after-free Read in print_report
+* KASAN: use-after-free Read in si470x_int_in_callback
+* KASAN: use-after-free Read in tcp_retransmit_timer
+* kernel BUG in do_journal_end
+* kernel panic: panic_on_warn set
+* possible deadlock in jbd2_journal_lock_updates
+* possible deadlock in p9_req_put
+* possible deadlock in rfcomm_sk_state_change
+* unregister_netdevice: waiting for DEV to become free
+* WARNING in ar5523_cmd~usb_submit_urb
+* WARNING in ath9k_hif_usb_alloc_urbs~usb_submit_urb
+* WARNING in hif_usb_send~usb_submit_urb
+* WARNING in j1939_session_deactivate
+* WARNING in __perf_event_overflow
+* WARNING in shark_write_val~usb_submit_urb
+* WARNING in __skb_flow_dissect
+* WARNING in tcp_enter_loss
