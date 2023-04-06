@@ -8,17 +8,21 @@ For more questions, feel free to email [Palash Oswal](https://oswalpalash.com) o
 
 The latest copy of the Corpus file [corpus.db](./corpus.db) is available in this repository. The file is updated daily. 
 Download it to [syzkaller](https://github.com/google/syzkaller) workdir and start syzkaller.
-`mkdir workdir`
-`cd workdir`
-`wget https://github.com/cmu-pasta/linux-kernel-regression-corpus/raw/main/corpus.db`
+```
+mkdir workdir
+cd workdir
+wget https://github.com/cmu-pasta/linux-kernel-regression-corpus/raw/main/corpus.db
+```
 Start Fuzzer
 
 ## Using corpus with HEALER
 
 The corpus programs are stored in `files` directory and can directly be imported to [HEALER](https://github.com/SunHao-0/healer).
 Clone the repository and copy over `files/*` to `output/corpus/` directory in HEALER. From within HEALER working directory, run the following commands.
-`mkdir -p output/corpus`
-`cp -vr <path/to/files/> output/corpus/`
+```
+mkdir -p output/corpus
+cp -vr <path/to/files/> output/corpus/
+```
 Start Fuzzer
 
 ### Fetching Corpus Manually
