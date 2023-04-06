@@ -66,7 +66,7 @@ New Bugs Reported:
 * https://lkml.org/lkml/2023/2/22/3 
 [and many more](https://twitter.com/oswalpalash/status/1627776397828853760)
 
-Exhaustive List of Bugs Discovered with Regression Corpus:
+Exhaustive List of Bugs Discovered with Syzkaller using Regression Corpus:
 * WARNING in udf_free_inode
 * WARNING in tcp_enter_loss
 * WARNING in shark_write_val/usb_submit_urb
@@ -88,8 +88,6 @@ Exhaustive List of Bugs Discovered with Regression Corpus:
 * UBSAN: shift-out-of-bounds in nilfs_load_super_block
 * UBSAN: shift-out-of-bounds in init_sb
 * UBSAN: shift-out-of-bounds in dbAllocAG
-* SYZFATAL: executor NUM failed NUM times: executor NUM: failed to write control pipe: write |NUM: broken pipe
-* SYZFATAL: executor NUM failed NUM times: executor NUM: exit status NUM
 * suppressed report
 * possible deadlock in virtual_nci_close
 * possible deadlock in rfcomm_sk_state_change
@@ -144,7 +142,6 @@ Exhaustive List of Bugs Discovered with Regression Corpus:
 * KASAN: use-after-free Read in move_expired_inodes
 * KASAN: slab-out-of-bounds Read in ntfs_attr_find
 * general protection fault in nilfs_palloc_commit_free_entry
-* SYZFATAL: executor NUM failed NUM times: executor NUM: EOF
 * KASAN: use-after-free Read in __mark_inode_dirty
 * WARNING in __perf_event_overflow
 * KASAN: use-after-free Read in mi_enum_attr
@@ -179,7 +176,6 @@ Exhaustive List of Bugs Discovered with Regression Corpus:
 * INFO: rcu detected stall in syscall_exit_to_user_mode
 * INFO: rcu detected stall in clone
 * UBSAN: shift-out-of-bounds in extAlloc
-* SYZFATAL: executor NUM failed NUM times: executor NUM: not serving
 * possible deadlock in btrfs_search_slot
 * possible deadlock in __jbd2_log_wait_for_space
 * KFENCE: use-after-free in drm_gem_object_release_handle
