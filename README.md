@@ -46,22 +46,23 @@ System Used : [ThinkMate](https://www.thinkmate.com/system/rax-xf2-11s1-sh), Int
 
 Kernel Versions Tested:  Linux v6.0.8 and v6.1.20
 
-Coverage over time 
+### Coverage over time 
 ![image](https://user-images.githubusercontent.com/6431196/230692263-cb912a13-6f63-4eaa-8e4f-78ce27f011a3.png)
+![image](https://user-images.githubusercontent.com/6431196/230692906-62701966-2873-424a-ae71-100bbc8529b1.png)
 
-Unique Crashes over time
+### Unique Crashes over time
 ![image](https://user-images.githubusercontent.com/6431196/230692399-c1b59af0-8c15-4461-9c8f-94eedd26e07d.png)
 
-Total Crashes over time
+### Total Crashes over time
 ![image](https://user-images.githubusercontent.com/6431196/230692326-b172512d-0335-4b13-bacf-790438ea5ead.png)
 
-CVEs:
+### CVEs:
 * [CVE-2023-26544](https://www.cve.org/CVERecord?id=CVE-2023-26544)
 * [CVE-2023-26605](https://www.cve.org/CVERecord?id=CVE-2023-26605)
 * [CVE-2023-26606](https://www.cve.org/CVERecord?id=CVE-2023-26606)
 * [CVE-2023-26607](https://www.cve.org/CVERecord?id=CVE-2023-26607)
 
-New Bugs Reported:
+### New Bugs Reported:
 * https://lkml.org/lkml/2023/2/20/128
 * https://lkml.org/lkml/2023/2/20/773
 * https://lkml.org/lkml/2023/2/20/785
@@ -70,7 +71,8 @@ New Bugs Reported:
 * https://lkml.org/lkml/2023/2/22/3 
 [and many more](https://twitter.com/oswalpalash/status/1627776397828853760)
 
-More bugs discovered (includes bugs that were found sooner than syzbot & bugs undiscovered by syzbot)
+### More bugs discovered (includes bugs that were found sooner than syzbot & bugs undiscovered by syzbot)
+
 | Title                                                     | Found in #Instance | Date of Discovery | Branch (if found by syzbot)| New/Earlier |
 |-----------------------------------------------------------|--------------------|-------------------|--------------------|------------------|
 | UBSAN: shift-out-of-bounds in ntfs_fill_super              | 10                 | 2/28/23           | 6.2.0              | Yes              |
