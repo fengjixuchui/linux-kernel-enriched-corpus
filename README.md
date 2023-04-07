@@ -1,10 +1,10 @@
-# Linux Kernel Regression Corpus for Fuzzers
+# Linux Kernel Regression Corpus for Fuzzers : **_Enriched Corpus_**
 
-Documentation for using and generating the corpus provided here.
+Documentation for using and generating the Enriched corpus provided here.
 
 For more questions, feel free to email [Palash Oswal](https://oswalpalash.com) or [Rohan Padhye](https://rohan.padhye.org).
 
-## Using corpus with Syzkaller
+## Using Enriched corpus with Syzkaller
 
 The latest copy of the Corpus file [corpus.db](./corpus.db) is available in this repository. The file is updated daily.
 
@@ -15,7 +15,7 @@ cd workdir
 wget https://github.com/cmu-pasta/linux-kernel-regression-corpus/raw/main/corpus.db
 ```
 
-## Using corpus with HEALER
+## Using Enriched corpus with HEALER
 
 The corpus programs are stored in `files` directory and can directly be imported to [HEALER](https://github.com/SunHao-0/healer).
 
@@ -45,13 +45,13 @@ System Used : [ThinkMate](https://www.thinkmate.com/system/rax-xf2-11s1-sh), Int
 Kernel Versions Tested:  Linux v6.0.8 and v6.1.20
 
 Coverage over time 
-![image](https://user-images.githubusercontent.com/6431196/230491976-e58db401-d572-4c58-ab18-59cbcf4031ec.png)
+![image](https://user-images.githubusercontent.com/6431196/230692263-cb912a13-6f63-4eaa-8e4f-78ce27f011a3.png)
 
 Unique Crashes over time
-![image](https://user-images.githubusercontent.com/6431196/230492537-d1d859a3-6b4a-432e-a290-44fcc5913cd1.png)
+![image](https://user-images.githubusercontent.com/6431196/230692399-c1b59af0-8c15-4461-9c8f-94eedd26e07d.png)
 
 Total Crashes over time
-![image](https://user-images.githubusercontent.com/6431196/230493115-42fe4205-06b3-471a-b228-426003d1e3b7.png)
+![image](https://user-images.githubusercontent.com/6431196/230692326-b172512d-0335-4b13-bacf-790438ea5ead.png)
 
 CVEs:
 * [CVE-2023-26544](https://www.cve.org/CVERecord?id=CVE-2023-26544)
