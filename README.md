@@ -69,7 +69,7 @@ New Bugs Reported:
 [and many more](https://twitter.com/oswalpalash/status/1627776397828853760)
 
 More bugs discovered (includes bugs that were found sooner than syzbot & bugs undiscovered by syzbot)
-| Title                                                     | Found in #Instance | Date of Discovery | Branch             | New/Earlier |
+| Title                                                     | Found in #Instance | Date of Discovery | Branch (if found by syzbot)| New/Earlier |
 |-----------------------------------------------------------|--------------------|-------------------|--------------------|------------------|
 | UBSAN: shift-out-of-bounds in ntfs_fill_super              | 10                 | 2/28/23           | 6.2.0              | Yes              |
 | UBSAN: shift-out-of-bounds in nilfs_load_super_block       | 10                 | 10/25/22          | net-6.1-rc3-1       | Yes              |
