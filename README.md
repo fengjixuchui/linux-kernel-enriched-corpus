@@ -54,7 +54,7 @@ Kernel Versions Tested:  Linux v6.0.8 and v6.1.20
 ![image](https://user-images.githubusercontent.com/6431196/230692399-c1b59af0-8c15-4461-9c8f-94eedd26e07d.png)
 
 ### Total Crashes over time
-![image](https://user-images.githubusercontent.com/6431196/230692326-b172512d-0335-4b13-bacf-790438ea5ead.png)
+![image](https://user-images.githubusercontent.com/6431196/230693213-d1669885-2aa4-4b34-b6ec-e4c084ddc7d4.png)
 
 ### CVEs:
 * [CVE-2023-26544](https://www.cve.org/CVERecord?id=CVE-2023-26544)
