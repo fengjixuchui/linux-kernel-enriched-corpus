@@ -1,4 +1,4 @@
-# Linux Kernel Regression Corpus for Fuzzers : **_Enriched Corpus_**
+# Linux Kernel Enriched Corpus for Fuzzers
 
 Documentation for using and generating the Enriched corpus provided here.
 
