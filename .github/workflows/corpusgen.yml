@@ -29,7 +29,7 @@ jobs:
         cp -v corpus.db ../../../linux-kernel-enriched-corpus
         cd ../../../
         rm -vr syzkaller
-        cd linux-kernel-regression-corpus
+        cd linux-kernel-enriched-corpus
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
