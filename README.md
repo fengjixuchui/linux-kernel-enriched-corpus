@@ -51,7 +51,7 @@ Kernel Versions Tested:  Linux v6.0.8 and v6.1.20
 ![image](https://user-images.githubusercontent.com/6431196/230694471-9830911c-297e-43e8-8a72-a6085cf2203e.png)
 
 ### Unique Crashes over time
-![image](https://user-images.githubusercontent.com/6431196/230694598-74d3e73d-6845-4e3d-8099-082be2b13b53.png)
+![image](https://user-images.githubusercontent.com/6431196/230694667-2c16c1d2-9546-41c0-9c24-f44c96c7c34b.png)
 
 ### Total Crashes over time
 ![image](https://user-images.githubusercontent.com/6431196/230694560-63040a13-490b-476b-a856-bd7ba5f7871b.png)
