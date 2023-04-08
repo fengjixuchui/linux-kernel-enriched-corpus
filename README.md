@@ -12,7 +12,7 @@ Download it to [syzkaller](https://github.com/google/syzkaller) workdir and star
 ```
 mkdir workdir
 cd workdir
-wget https://github.com/cmu-pasta/linux-kernel-regression-corpus/raw/main/corpus.db
+wget https://github.com/cmu-pasta/linux-kernel-enriched-corpus/raw/main/corpus.db
 ```
 
 ## Using Enriched corpus with HEALER
@@ -27,7 +27,7 @@ cp -vr <path/to/files/> output/corpus/
 
 ### Fetching Corpus Manually
 
-[collect.py](./collect.py) : currently fetches `syz` reproducers from all fixed Linux Kernel upstream crashes in [syzbot](syzkaller.appspot.com/upstream/fixed).
+[collect.py](./collect.py) : currently fetches `syz` reproducers from all fixed Linux Kernel upstream crashes in [syzbot](https://syzkaller.appspot.com/upstream/fixed).
 
 This script can be modified to fetch corpus programs from other kernel versions and to fetch "C" Programs instead of `syz` reproducers.
 
