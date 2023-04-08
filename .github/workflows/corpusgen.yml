@@ -25,7 +25,7 @@ jobs:
         cd ..
         git clone https://github.com/google/syzkaller
         cd syzkaller/tools/syz-db
-        go run syz-db.go pack ../../../linux-kernel-regression-corpus/files corpus.db
+        go run syz-db.go pack ../../../linux-kernel-enriched-corpus/files corpus.db
         cp -v corpus.db ../../../linux-kernel-regression-corpus
         cd ../../../
         rm -vr syzkaller
