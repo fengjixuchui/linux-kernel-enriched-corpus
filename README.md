@@ -69,6 +69,10 @@ Kernel Versions Tested:  Linux v6.0.8 and v6.1.20
 * https://lkml.org/lkml/2023/2/20/860
 * https://lkml.org/lkml/2023/2/21/1353
 * https://lkml.org/lkml/2023/2/22/3 
+* https://lkml.org/lkml/2023/4/13/39
+* https://lkml.org/lkml/2023/4/13/45
+* https://lkml.org/lkml/2023/4/13/1317
+* https://lkml.org/lkml/2023/4/13/1350
 [and many more](https://twitter.com/oswalpalash/status/1627776397828853760)
 
 ### More bugs discovered (includes bugs that were found sooner than syzbot & bugs undiscovered by syzbot)
